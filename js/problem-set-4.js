@@ -2,10 +2,9 @@
  * Hello. 2 points.
  */
 
-function hello() {
-
-  // WRITE YOUR EXERCISE 1 CODE HERE
-
+function hellobutton() {
+    var p=document.getElementById("output1")
+  p.innerHTML="Hello, AP Computer Science Principles!" ;
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
@@ -16,13 +15,13 @@ function hello() {
  */
 
 function helloAgain() {
-
   //////////// DO NOT MODIFY      Use the @name variable to store
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
-
-  // WRITE YOUR EXERCISE 2 CODE HERE
-
+name = prompt("What is your name?");
+if (name != null) {
+    document.getElementById("output2").innerHTML ="Hello, " + name + "!" ;
+}
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -41,7 +40,7 @@ function celsius() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+  document.getElementById("output3").innerHTML=cels + " degrees Celsius equals " + (cels*1.8 + 32).toFixed(2) + " degrees Fahrenheit.";
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -61,7 +60,7 @@ function fahrenheit() {
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 4 CODE HERE
+  document.getElementById("output4").innerHTML=fahr + " degrees Fahrenheit equals " + ((fahr-32)*(5/9)).toFixed(2) + " degrees Celsius.";
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
