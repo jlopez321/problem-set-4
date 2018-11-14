@@ -3,7 +3,7 @@
  */
 
 function hellobutton() {
-    var p=document.getElementById("output1")
+    let p=document.getElementById("output1")
   p.innerHTML="Hello, AP Computer Science Principles!" ;
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
@@ -15,7 +15,7 @@ function hellobutton() {
  */
 
 function helloAgain() {
-  //////////// DO NOT MODIFY      Use the @name variable to store
+  //////////// DO NOT MODIFY      Use the @name letiable to store
   let name; // DO NOT MODIFY      the value that the user enters
   //////////// DO NOT MODIFY      in response to your prompt.
 name = prompt("What is your name?");
@@ -84,7 +84,8 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  let p= document.getElementById("output5");
+  p.innerHTML="Miles: " + (Math.floor(inches/63360)); + "Yards: " + (Math.floor(inches/36)); + "<br/>Feet: " + (Math.floor(inches/12)); + "<br/>Inches: " + inches;
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
