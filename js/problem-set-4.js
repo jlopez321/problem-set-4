@@ -115,7 +115,7 @@ function centimeters() {
    let kilometers=Math.floor(centimeters/100000);
   let meters=Math.floor((centimeters/100) - kilometers);
   let centis2=Math.floor((centimeters - (kilometers + meters));
-  document.getElementById("output5").innerHTML=("Kilometers: " + kilometers + "<br/>" + "Meters: " + meters + "<br/>" + "Centimeters: " + centis2 
+  document.getElementById("output6").innerHTML=("Kilometers: " + kilometers + "<br/>" + "Meters: " + meters + "<br/>" + "Centimeters: " + centis2 
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
