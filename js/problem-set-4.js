@@ -87,7 +87,7 @@ function inches() {
   let miles=Math.floor(inches/63360);
   let feet=Math.floor((inches/12) % 3);
   let yards=Math.floor((inches/36) % 1760);
-  let inch2=Math.floor(inches % 12);
+  let inches2=Math.floor(inches % 12);
   document.getElementById("output5").innerHTML=("Miles: " + miles + "<br/>" + "Yards: " + yards + "<br/>" + "Feet: " + feet + "<br/>" + "Inches: " + inch2);
 
   ////////////////////////// DO NOT MODIFY
@@ -112,7 +112,10 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 6 CODE HERE
+   let kilometers=Math.floor(centimeters/100000);
+  let meters=Math.floor((centimeters/100) - kilometers);
+  let centis2=Math.floor((centimeters - (kilometers + meters));
+  document.getElementById("output5").innerHTML=("Kilometers: " + kilometers + "<br/>" + "Meters: " + meters + "<br/>" + "Centimeters: " + centis2 
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
