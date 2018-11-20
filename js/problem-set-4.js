@@ -112,10 +112,10 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-   let kilometers=Math.floor(centimeters/100000);
-  let meters=Math.floor((centimeters/100) - kilometers);
-  let centis2=Math.floor((centimeters - (kilometers + meters));
-  document.getElementById("output6").innerHTML=("Kilometers: " + kilometers + "<br/>" + "Meters: " + meters + "<br/>" + "Centimeters: " + centis2 
+  let kilometers=Math.floor (centimeters/100000);
+  let meters=Math.floor((centimeters - (kmeters*100000))/100);
+  centimeters=Math.floor ((centimeters - (kmeters*100000) - (meters*100))/1);
+  document.getElementById("output6").innerHTML= "Kilometers: +kilometers +"<br/>Meters:" + meters + "<br/>Centimeters: " + centimeters;
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
