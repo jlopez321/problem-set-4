@@ -231,7 +231,7 @@ let coins=quarter+dime+nickel+pennies
 
 if(coins=1) {
    document.getElementById("output10").innerHTML=coins + "coins.";
-
+}
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
