@@ -21,7 +21,7 @@ function helloAgain() {
 name = prompt("What is your name?");
 if (name != null) {
     document.getElementById("output2").innerHTML ="Hello, " + name + "!" ;
-}
+
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
