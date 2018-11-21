@@ -168,11 +168,12 @@ function ounces() {
   let ounces = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-    let tons=Math.floor(ounces/32000)
-  let pounds= Math.floor((ounces - (tons*32000))/16);
-  ounces= Math.floor((ounces - (tons*32000) - (pounds*16))/1);
-  document.getElementById("output8").innerHTML="Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ounces;
-
+ let tons = Math.floor(ounces / 32000);
+  ounces = ounces % 32000;
+  let pounds = Math.floor(ounces / 16);
+  ounces = ounces % 16;
+  document.getElementById("output8").innerHTML=("Tons: "+tons+"</br>Pounds: "+pounds+"</br>Ounces: "+ounces);
+    
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
